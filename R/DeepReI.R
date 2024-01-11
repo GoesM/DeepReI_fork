@@ -189,6 +189,7 @@ shinyApp(
       t8 <- lapply(t7, vectorize_sequences)
       t9 <- array_reshape(t8, c(length(smiles_r),32, 183,1), order = "F")
       t10 <- array_reshape(t9, c(length(smiles_r),32,183, 1))
+      t10 <- array_reshape(t10, c(length(smiles_r),32*183*1))
 
       predicted <- model_DeepReI %>% predict(t10) %>% round(digits = 0)
       sm <- read.csv(input$smiles$datapath,
