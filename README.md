@@ -52,9 +52,9 @@ INSTRUCTIONS FOR USE:
 
 After successful installation, type following code to the R console.
 
-	library(DeepReI_fork)
+	library(DeepReI)
 
-	DeepReI_fork()
+	DeepReI()
 
 DeepReI application will be opened in a web browser.
 In the SMILES input tab, select file (.csv or .txt) with SMILES in a first column. If the first row represents header of the column, tick the Header box.
