@@ -58,13 +58,15 @@ At this moment, the DeepReI uses demo model – prediction will not be performed
 6) Open 7-Zip File Manager (installed in step #3), find extdata folder in directory where DeepReI package was installed (e.g. Documents\R\win-library\4.0/DeepReI). Click on the model_DeepReI.zip.001 by right mouse button in the 7-Zip File Manager and select „Combine files…“. This procedure creates model_DeepReI.h5 file in zip folder. Unzip the .h5 file and replace the original model_DeepReI.h5 file in extdata folder with unzipped model_DeepReI.h5 file.
 
  
-## use DeepReI !
+## Go for It !
 
 INSTRUCTIONS FOR USE:
 
 After successful installation, type following code to the R console.
 
 	library(DeepReI)
+
+  	library(keras)
 
 	DeepReI()
 
